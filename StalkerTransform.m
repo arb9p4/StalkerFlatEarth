@@ -140,7 +140,7 @@ for curRun = 1:length(d)
         TVoxFlat2World = A\b;
 
 
-        f(2);
+        figure(2);
         clf;
         curVec0 = [1 1 1 1]*TVox2World;
         curVec1 = [1/dx 0 0 1]*TVox2World;
