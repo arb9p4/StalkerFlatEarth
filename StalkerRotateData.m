@@ -53,7 +53,7 @@ parfor i=1:1000
         (1-alpha(goodInds)).*beta(goodInds).*(1-gamma(goodInds)).*data(indsNeighAlphaGamma(goodInds))+...
         alpha(goodInds).*(1-beta(goodInds)).*(1-gamma(goodInds)).*data(indsNeighBetaGamma(goodInds))+...
         (1-alpha(goodInds)).*(1-beta(goodInds)).*(1-gamma(goodInds)).*data(indsNeighAlphaBetaGamma(goodInds));
-    f(3);imagesc(imRot, [0 .01]);
+    figure(3);imagesc(imRot, [0 .01]);
     pause(.01);
     
     imRotBig(i,:,:) = permute(imRot, [3 1 2])/h.data_scale_factor;
